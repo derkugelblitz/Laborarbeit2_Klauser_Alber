@@ -22,7 +22,7 @@
         return dev_alias;
     }
 
-    auto operator<<(std::ostream& oss, const Developer& dev) -> const std__ostream&
+    auto operator<<(std::ostream& oss, const Developer& dev) -> const std::ostream&
     {
         return oss << "Name: " << dev.Developer::get_dev_name() << std::endl << "Alias: " << dev.Developer::get_dev_alias();
 

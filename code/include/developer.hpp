@@ -22,7 +22,7 @@ public:
     auto get_dev_alias() const -> const std::string&;
 
     
-    virtual void solve_problem() const = 0;
+    virtual void solve_problem() = 0;
 
 
 };
@@ -34,7 +34,7 @@ class SeniorDeveloper : public Developer {
         
         SeniorDeveloper(const std::string& name, const std::string& alias);
 
-        void solve_problem() const override;
+        auto solve_problem() -> void;
 };
 
 class JuniorDeveloper : public Developer{
@@ -42,7 +42,7 @@ class JuniorDeveloper : public Developer{
 
     JuniorDeveloper(const std::string& name, const std::string& alias);
 
-    void solve_problem() const override;
+    auto solve_problem() -> void;
 };
 
 #endif
